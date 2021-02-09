@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./skills.css">
+</head>
+<body>
+    <div class="env">
+        <div class="inenv"> 
+            <div class="sidebar">
+                <div class="about">
+                    <div class="photo">  <img src="photo1.jpg" alt="" id="aman"></div>
+                    <div class="name">   <h2>Aman Thakur</h2>
+                    <p>Web- Developer</p> </div>
+                    
+ 
+                </div> 
+                <input type="checkbox" id="check">
+                 <div class="bars"><label for="check">  <i class="fas fa-bars"></i></label></div>
+                  <div class="menu">
+                    <ul>
+                        <a href="./index.html"> <li><i class="fas fa-home "></i> Home  </li></a>
+                        <a href="#"><li class="active"><i class="fas fa-tools "></i> Skills  </li></a>
+                        <a href="./project.html"> <li><i class="fas fa-tasks "></i> My Work</li></a>
+                        <a href="./contact.html"> <li><i class="far fa-address-book "></i> Contact </li></a>
+                    </ul>
+                </div>
+            </div> 
+            <div class="ground">
+                <div class="in">
+                  <div><i class="fab fa-html5 fa-3x"></i> <p>HTML</p></div>
+                  <div><i class="fab fa-css3-alt fa-3x"></i><p>CSS</p></div>
+                  <div><i class="fab fa-js-square fa-3x"></i><p>JS</p></div>
+                  <div><i class="fab fa-react fa-3x"></i><p>REACTJS</p></div>
+                  <div><i class="fab fa-node-js fa-3x"></i><p>NODEJS</p></div>
+                  <div><i class="fab fa-node-js fa-3x"></i><p>EXPRESSJS</p> </div>
+                  <div><i class="fas fa-database fa-3x"></i> <p> MONGODB </p></div>
+                  
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var photo= document.querySelector(".photo")
+       
+        var height=photo.clientHeight ;
+        var width=photo.clientWidth;
+        
+        final=height<width?height:width;
+        final=final-10 +"px";
+ 
+        var ph= document.getElementById("aman")
+        
+        ph.style.width=final;
+        ph.style.height=final;
+
+    </script>
+</body>
+</html>

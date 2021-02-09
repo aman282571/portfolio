@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body> 
+    <div class="env">
+        <div class="inenv"> 
+            <div class="sidebar">
+                <div class="about">
+                    <div class="photo"> <img id="aman" src="photo1.jpg"   alt=""></div>
+                   
+                   <div class="name"> <h2>Aman Thakur</h2> 
+                    <p>Web- Developer</p></div>
+                    
+
+                </div>
+                
+                <input type="checkbox" id="check">
+                 <div class="bars"><label for="check">  <i class="fas fa-bars"></i></label></div>
+                <div class="menu">
+                    
+                    <ul>
+                        <a href="./index.html"> <li><i class="fas fa-home "></i> Home </li></a>
+                   <a href="./skills.html"><li><i class="fas fa-tools "> </i> Skills</li></a>
+                   <a href="#"><li class="active"><i class="fas fa-tasks "></i> My Work</li></a>
+                   <a href="./contact.html"> <li><i class="far fa-address-book "></i> Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="ground">
+                <div class="in">
+                   <a href="https://aman282571.github.io/ExpenseTracker/" target="_blank"> <div>  <img src="expense.jpg" height="70%" width="90%" alt=""> <p>A basic React application for tracking the expenses</p> </div></a>
+                   <a href="https://aman282571.github.io/thomso/" target="_blank"> <div> <img src="thomso1.jpg" height="70%" width="90%" alt=""> <p>Home page of thomso Website</p> </div></a>
+                   <a href="https://aman282571.github.io/template/" target="_blank"><div><img src="template1.jpg" height="70%" width="90%" alt=""> <p>A website layout for desktop </p></div></a>
+                   
+                  
+                  
+                  
+                  
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        var photo= document.querySelector(".photo")
+       
+        var height=photo.clientHeight ;
+        var width=photo.clientWidth;
+        
+        final=height<width?height:width;
+        final=final-10 +"px";
+ 
+        var ph= document.getElementById("aman")
+        
+        ph.style.width=final;
+        ph.style.height=final;
+
+    </script>
+</body>
+</html>

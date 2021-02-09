@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="env" >
+        <div class="inenv" > 
+            <div class="sidebar" >  
+                <div class="about"> 
+                    <div class="photo"> <img src="photo1.jpg" id="aman" alt=""></div>
+                    <div class="name">  <h2>Aman Thakur</h2>
+                    <p>Web- Developer</p>   </div>
+                    
+
+                </div>
+                <input type="checkbox" id="check">
+                <div class="bars"><label for="check">  <i class="fas fa-bars"></i></label></div>
+                <div class="menu">
+                    <ul>
+                        <a href="#"> <li class="active"><i class="fas fa-home "></i> Home</li></a>
+                        <a href="./skills.html"> <li><i class="fas fa-tools "></i> Skills</li></a>
+                        <a href="./project.html"><li><i class="fas fa-tasks "></i> My Work</li></a>
+                        <a href="./contact.html"><li><i class="far fa-address-book "></i> Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="ground" >
+                <div class="in" >
+                   <h1>Hello !</h1>
+                   <div class="section1">My name is Aman Thakur. </div>
+                   <div class="section2">I'm a Front-end/Back-end Developer..</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var photo= document.querySelector(".photo")
+   
+    var height=photo.clientHeight ;
+    var width=photo.clientWidth;
+    
+    final=height<width?height:width;
+    final=final-10 +"px";
+
+    var ph= document.getElementById("aman")
+    
+    ph.style.width=final;
+    ph.style.height=final;
+
+</script>
+</html>
