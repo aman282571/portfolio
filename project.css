@@ -158,20 +158,24 @@ background-color: white;
     overflow: hidden; 
     overflow-y: scroll;
 }
-
-
-
-
-
 .in{
     display: grid;
     grid-template-columns: 200px 200px 200px ;
-   grid-auto-rows: 300px;
-   justify-content: space-around;
+   grid-auto-rows:30px;
+   justify-content: center;
    padding: 5%;
-   grid-gap: 7%; 
+   grid-gap: 40px;
+   
    background-color: black;
 
+}
+#particles-js canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 .in div::before{
     content:"";
@@ -185,6 +189,20 @@ background-color: white;
     transition: opacity 200ms;
 
 }
+.one{
+   grid-row: 1/8;
+}
+.two{
+    grid-row: 1/6;
+
+ }
+ .three{
+    grid-row: 1/6;
+ }
+ .four{
+    grid-row: 6/11;
+ }
+
 .in div:hover::before{
     opacity: 0;
 }
@@ -194,10 +212,23 @@ background-color: white;
     position: relative;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+.in .heading{
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 5px;
+    color: rgb(246, 250, 12);
+}
+.in .desc{
+    text-align: left;
+    padding: 10px;
+    color: lawngreen;
+    
+    
 }
 .in a{
     text-decoration: none;
@@ -310,13 +341,24 @@ a:hover{
 .in{
     display: grid;
     grid-template-columns: 200px 200px ;
-   grid-auto-rows: 250px;
-   justify-content: space-around;
+   grid-auto-rows: 30px;
+   justify-content:center;
    padding: 5%;
-   grid-gap: 7%; 
-   
-
+   grid-gap: 40px; 
 }
+.one{
+    grid-row: 1/8;
+ }
+ .two{
+     grid-row: 1/6;
+ 
+  }
+  .three{
+     grid-row: 6/11;
+  }
+  .four{
+     grid-row: 8/13;
+  }
 .in::-webkit-scrollbar{
     width: 8px;
 }
@@ -412,13 +454,26 @@ a:hover{
 .in{
     display: grid;
     grid-template-columns: 200px  ;
-   grid-auto-rows: 200px;
-   justify-content: space-around;
+   grid-auto-rows: 30px;
+   justify-content: center;
    padding: 5%;
-   grid-gap: 7%; 
+   grid-gap: 40px; 
    
 
 }
+.one{
+    grid-row: 1/8;
+ }
+ .two{
+     grid-row: 8/13;
+ 
+  }
+  .three{
+     grid-row: 13/18;
+  }
+  .four{
+     grid-row: 18/23;
+  }
 
 }
 

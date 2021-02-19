@@ -59,11 +59,10 @@ h2{
     position: relative;
     margin-top: 10px;
    
-    
-    
 }
 p{
     text-align: center;
+    
 }
 .menu{
 height: 65%;
@@ -153,17 +152,24 @@ background-color: white;  /*----------------*/
 .ground .in{
     height: 98%;
     width: 98%;
-    
+    z-index: 1;
     position: relative;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     
      background-color: black;/*----------------*/
-    
-
-
 }
+#particles-js canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .in{
     display: flex;
     flex-direction: column;
@@ -177,9 +183,10 @@ h1{
     
     position: relative;
    animation: hlo 1.5s 1 ease-in;
-    
-    
+   color: rgb(90, 221, 90);
+      
 }
+
 @keyframes hlo{
     0%{
         left: 10%;
@@ -200,7 +207,7 @@ h1{
     font-size: 30px;
     line-height: 50px;
     animation:text 1s 1 ease-in forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     color: transparent;
     
 }
@@ -211,7 +218,7 @@ h1{
     font-size: 30px;
     line-height: 50px;
     animation: text 1s 1 ease-in forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     color: transparent;
 }
 @keyframes text{
@@ -221,7 +228,7 @@ h1{
     }
    100%{
         top: 0%;
-        color: white;
+        color: rgb(172, 219, 182);
         
     }
 }
@@ -251,7 +258,7 @@ h1{
 
     .bars,#check{
         position: absolute;
-        visibility: hidden;
+        visibility: hidden; 
     }
 }
 
@@ -403,11 +410,19 @@ h1{
   .ground{
     height: 85%; 
   }
+  h1{
+      font-size: 50px;
+      height: 50px;
+  }
   .section1{
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 20px;
   }
   .section2{
-    font-size: 17px;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
 }
 
 

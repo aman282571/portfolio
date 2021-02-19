@@ -33,11 +33,26 @@
                 </div>
             </div>
             <div class="ground">
-                <div class="in">
-                   <a href="https://aman282571.github.io/ExpenseTracker/" target="_blank"> <div>  <img src="expense.jpg" height="70%" width="90%" alt=""> <p>A basic React application for tracking the expenses</p> </div></a>
-                   <a href="https://aman282571.github.io/thomso/" target="_blank"> <div> <img src="thomso1.jpg" height="70%" width="90%" alt=""> <p>Home page of thomso Website</p> </div></a>
-                   <a href="https://aman282571.github.io/template/" target="_blank"><div><img src="template1.jpg" height="70%" width="90%" alt=""> <p>A website layout for desktop </p></div></a>
-                   
+                <div class="in" id="particles-js">
+                    <a class="one" href="https://github.com/aman282571/library" target="_blank"> 
+                        <div>  <img src="library.png" height="200px" width="90%" alt="">
+                            <p class="heading">E-Library</p>
+                             <p class="desc">Library which includes registration, login page for each user. Users can add, search,borrow(owner of the book will get mail),delete books from this.Individual webpages to show each book.</p> </div></a>
+
+                   <a class="two" href="https://aman282571.github.io/ExpenseTracker/" target="_blank"> 
+                    <div>  <img src="expense.jpg" height="200px" width="90%" alt="">
+                        <p class="heading">Expense Tracker</p>
+                         <p class="desc">A basic React application for tracking the expenses</p> </div></a>
+
+                   <a class="three" href="https://aman282571.github.io/thomso/" target="_blank"> 
+                    <div> <img src="thomso1.jpg" height="200px" width="90%" alt=""> 
+                        <p class="heading">Thomso'19</p>
+                        <p class="desc">Home page of thomso Website</p> </div></a>
+                   <a class="four" href="https://aman282571.github.io/template/" target="_blank">
+                    <div><img src="template1.jpg" height="200px" width="90%" alt="">
+                        <p class="heading">Template</p>
+                         <p class="desc">A website layout for desktop </p></div></a>
+                    
                   
                   
                   
@@ -61,5 +76,12 @@
         ph.style.height=final;
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
 </body>
 </html>

@@ -153,15 +153,8 @@ background-color: white;  /*----------------*/
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: black;/*----------------*/
- 
-    
+    background-color: black;/*----------------*/ 
 }
-
-
-
-
-
 .in{
     display: grid;
     grid-template-columns: 150px 150px 150px ;
@@ -171,12 +164,15 @@ background-color: white;  /*----------------*/
    grid-gap: 7%;
    overflow-y: hidden;
     overflow-y: scroll;
-  
-    
-    
-
 }
-
+#particles-js canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
 
 .in>div:nth-child(even){
     background-color: green;
