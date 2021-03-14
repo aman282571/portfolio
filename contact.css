@@ -342,6 +342,9 @@ li::after {
 @media (min-width: 200px) and (max-width: 700px) {
 	.inenv {
 		display: block;
+
+		width: 96%;
+		height: 96%;
 	}
 	.sidebar {
 		height: 15%;

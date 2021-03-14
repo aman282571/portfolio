@@ -385,6 +385,9 @@ a:hover {
 @media (min-width: 200px) and (max-width: 700px) {
 	.inenv {
 		display: block;
+
+		width: 96%;
+		height: 96%;
 	}
 	.sidebar {
 		height: 15%;
@@ -465,6 +468,7 @@ a:hover {
 		padding: 5%;
 		grid-gap: 40px;
 	}
+
 	.one {
 		grid-row: 1/9;
 	}
