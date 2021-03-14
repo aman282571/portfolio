@@ -10,9 +10,9 @@
 <body>
     <div class="env">
         <div class="inenv">
-            <div class="sidebar">
+            <div class="sidebar">  
                 <div class="about">
-                    <div class="photo"> <img src="photo1.jpg" alt="" id="aman"></div>
+                    <div class="photo"> <img src="/photos/photo.jpg" alt="" id="aman"></div>
     
                     <div class="name">
                          <h2>Aman Thakur</h2>
@@ -22,7 +22,7 @@
                 </div>
                  
                 <input type="checkbox" id="check">
-                 <div class="bars"><label for="check">  <i class="fas fa-bars"></i></label></div>
+                 <div class="bars"><label for="check">  <i class="fas fa-bars"></i></label><label for="check"> <i class="fas fa-times"></i></label></div>
                 <div class="menu">
                     <ul>
                         <a href="./index.html"> <li><i class="fas fa-home "></i> Home</li> </a>
@@ -63,6 +63,21 @@
         ph.style.height=final;
 
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+  <script>
+      $(document).ready(()=>{
+          $('i.fa-bars').click(()=>{
+            $('i.fa-bars').toggle()
+            $('i.fa-times').toggle()
+            
+          })
+          $('i.fa-times').click(()=>{
+            $('i.fa-times').toggle()
+            $('i.fa-bars').toggle()
+            
+          })
+      })
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script>
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
