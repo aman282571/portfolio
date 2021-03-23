@@ -374,12 +374,10 @@ li:hover::before {
   font-size: 20px;
   font-weight: 600;
 }
-@media (min-width: 1450px) {
-  .inbox {
-    padding: 6%;
-  }
+@media (min-width: 1600px) {
   .inbox div {
-    margin: 30px 70px 30px 70px;
+    height: 200px;
+    width: 200px;
   }
 }
 @media (min-width: 1100px) {
